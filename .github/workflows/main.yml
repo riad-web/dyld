@@ -16,7 +16,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-      
+      - name: Set execute permissions for scripts
+        run: chmod +x /Users/runner/work/dyld/dyld/build-scripts/configure-dyld-archives.sh
+
       - name: Build with xcodebuild
         run: xcodebuild -project dyld.xcodeproj
       - name: Archive build artifacts
