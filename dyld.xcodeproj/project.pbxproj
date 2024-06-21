@@ -3252,7 +3252,7 @@
 				GCC_WARN_SIGN_COMPARE = YES;
 				INSTALL_PATH = "$(INSTALL_LOCATION)/usr/local/lib";
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MACOSX_DEPLOYMENT_TARGET  = 10.13;
 				OTHER_CFLAGS = "-DBOM_SUPPORT=1";
 				PRODUCT_NAME = slc_builder;
 				SDKROOT = macosx;
@@ -3293,7 +3293,7 @@
 				INSTALLHDRS_COPY_PHASE = YES;
 				INSTALL_PATH = "$(INSTALL_LOCATION)/usr/local/lib";
 				MACH_O_TYPE = mh_dylib;
-				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MACOSX_DEPLOYMENT_TARGET  = 10.13;
 				OTHER_CFLAGS = "-DBOM_SUPPORT=1";
 				PRODUCT_NAME = slc_builder;
 				SDKROOT = macosx;
@@ -3341,7 +3341,7 @@
 				INSTALLHDRS_COPY_PHASE = YES;
 				INSTALL_PATH = "$(DT_TOOLCHAIN_DIR)/usr/lib";
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(PRODUCT_NAME).dylib";
-				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MACOSX_DEPLOYMENT_TARGET  = 10.13;
 				OTHER_LDFLAGS = "-Wl,-no_warn_inits";
 				OTHER_TAPI_FLAGS = "-extra-private-header $(SRCROOT)/dyld3/shared-cache/kernel_collection_builder.h";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3368,7 +3368,7 @@
 				INSTALLHDRS_COPY_PHASE = YES;
 				INSTALL_PATH = "$(DT_TOOLCHAIN_DIR)/usr/lib";
 				LD_DYLIB_INSTALL_NAME = "@rpath/$(PRODUCT_NAME).dylib";
-				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MACOSX_DEPLOYMENT_TARGET  = 10.13;
 				OTHER_TAPI_FLAGS = "-extra-private-header $(SRCROOT)/dyld3/shared-cache/kernel_collection_builder.h";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -3869,7 +3869,7 @@
 					"$(DERIVED_SOURCES_DIR)/**",
 					"$(SDKROOT)/System/Library/Frameworks/System.framework/PrivateHeaders",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MACOSX_DEPLOYMENT_TARGET  = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -3912,7 +3912,7 @@
 					"$(DERIVED_SOURCES_DIR)/**",
 					"$(SDKROOT)/System/Library/Frameworks/System.framework/PrivateHeaders",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 13.5;
+				MACOSX_DEPLOYMENT_TARGET  = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
