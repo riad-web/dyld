@@ -20,7 +20,7 @@ jobs:
         run: chmod +x /Users/runner/work/dyld/dyld/build-scripts/configure-dyld-archives.sh
 
       - name: Build with xcodebuild
-        run: xcodebuild -project dyld.xcodeproj MACOSX_DEPLOYMENT_TARGET=11 OTHER_CFLAGS="-DDYLD_VERSION=852" OTHER_CPLUSPLUSFLAGS="-DDYLD_VERSION=852"
+        run: xcodebuild -project dyld.xcodeproj OTHER_CFLAGS="-DDYLD_VERSION=852" OTHER_CPLUSPLUSFLAGS="-DDYLD_VERSION=852"
       - name: Archive build artifacts
         uses: actions/upload-artifact@v2
         with:
