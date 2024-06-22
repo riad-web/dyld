@@ -162,22 +162,22 @@ typedef struct __NSObjectFileImage* NSObjectFileImage;
 
 
 /* NSObjectFileImage can only be used with MH_BUNDLE files */
-extern NSObjectFileImageReturnCode NSCreateObjectFileImageFromFile(const char* pathName, NSObjectFileImage *objectFileImage)               __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "dlopen()");
-extern NSObjectFileImageReturnCode NSCreateObjectFileImageFromMemory(const void *address, size_t size, NSObjectFileImage *objectFileImage) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
-extern bool                        NSDestroyObjectFileImage(NSObjectFileImage objectFileImage)                                             __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "dlclose()");
+//extern NSObjectFileImageReturnCode NSCreateObjectFileImageFromFile(const char* pathName, NSObjectFileImage *objectFileImage)               __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "dlopen()");
+//extern NSObjectFileImageReturnCode NSCreateObjectFileImageFromMemory(const void *address, size_t size, NSObjectFileImage *objectFileImage) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
+//extern bool                        NSDestroyObjectFileImage(NSObjectFileImage objectFileImage)                                             __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "dlclose()");
 
-extern uint32_t     NSSymbolDefinitionCountInObjectFileImage(NSObjectFileImage objectFileImage)                   __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
-extern const char*  NSSymbolDefinitionNameInObjectFileImage(NSObjectFileImage objectFileImage, uint32_t ordinal)  __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
-extern uint32_t     NSSymbolReferenceCountInObjectFileImage(NSObjectFileImage objectFileImage)                    __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
-extern const char*  NSSymbolReferenceNameInObjectFileImage(NSObjectFileImage objectFileImage, uint32_t ordinal, bool *tentative_definition) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
-extern bool         NSIsSymbolDefinedInObjectFileImage(NSObjectFileImage objectFileImage, const char* symbolName) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.4, "dlsym()");
-extern void*        NSGetSectionDataInObjectFileImage(NSObjectFileImage objectFileImage, const char* segmentName, const char* sectionName, size_t *size) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "getsectiondata()");
+//extern uint32_t     NSSymbolDefinitionCountInObjectFileImage(NSObjectFileImage objectFileImage)                   __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
+//extern const char*  NSSymbolDefinitionNameInObjectFileImage(NSObjectFileImage objectFileImage, uint32_t ordinal)  __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
+//extern uint32_t     NSSymbolReferenceCountInObjectFileImage(NSObjectFileImage objectFileImage)                    __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
+//extern const char*  NSSymbolReferenceNameInObjectFileImage(NSObjectFileImage objectFileImage, uint32_t ordinal, bool *tentative_definition) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
+//extern bool         NSIsSymbolDefinedInObjectFileImage(NSObjectFileImage objectFileImage, const char* symbolName) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.4, "dlsym()");
+//extern void*        NSGetSectionDataInObjectFileImage(NSObjectFileImage objectFileImage, const char* segmentName, const char* sectionName, size_t *size) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "getsectiondata()");
 
 typedef struct __NSModule* NSModule;
-extern const char*  NSNameOfModule(NSModule m)         __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
-extern const char*  NSLibraryNameForModule(NSModule m) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
+//extern const char*  NSNameOfModule(NSModule m)         __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
+//extern const char*  NSLibraryNameForModule(NSModule m) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
 
-extern NSModule NSLinkModule(NSObjectFileImage objectFileImage, const char* moduleName, uint32_t options) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "dlopen()");
+//extern NSModule NSLinkModule(NSObjectFileImage objectFileImage, const char* moduleName, uint32_t options) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "dlopen()");
 #define NSLINKMODULE_OPTION_NONE                         0x0
 #define NSLINKMODULE_OPTION_BINDNOW                      0x1
 #define NSLINKMODULE_OPTION_PRIVATE                      0x2
@@ -203,9 +203,9 @@ typedef struct __NSSymbol* NSSymbol;
 #define NSLOOKUPSYMBOLINIMAGE_OPTION_BIND_NOW        0x1
 #define NSLOOKUPSYMBOLINIMAGE_OPTION_BIND_FULLY      0x2
 #define NSLOOKUPSYMBOLINIMAGE_OPTION_RETURN_ON_ERROR 0x4
-extern const char*  NSNameOfSymbol(NSSymbol symbol)    __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
-extern void *       NSAddressOfSymbol(NSSymbol symbol) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "dlsym()");
-extern NSModule     NSModuleForSymbol(NSSymbol symbol) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "dladdr()");
+//extern const char*  NSNameOfSymbol(NSSymbol symbol)    __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
+//extern void *       NSAddressOfSymbol(NSSymbol symbol) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "dlsym()");
+//extern NSModule     NSModuleForSymbol(NSSymbol symbol) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "dladdr()");
 
 /* error handling API */
 typedef enum {
@@ -233,7 +233,7 @@ typedef enum {
     NSOtherErrorInvalidArgs
 } NSOtherErrorNumbers;
 
-extern void NSLinkEditError(NSLinkEditErrors *c, int *errorNumber, const char** fileName, const char** errorString) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "dlerror()");
+//extern void NSLinkEditError(NSLinkEditErrors *c, int *errorNumber, const char** fileName, const char** errorString) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "dlerror()");
 
 typedef struct {
      void     (*undefined)(const char* symbolName);
