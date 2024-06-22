@@ -118,8 +118,7 @@ extern void _tlv_bootstrap(void)                                             __O
  * cannot stat() the file to see if it "exists".  This function is like a stat() call that checks if a
  * path is to a dylib that was removed from disk and is incorporated into the active dyld cache.
  */
-extern bool _dyld_shared_cache_contains_path(const char* path)               __API_AVAILABLE(macos(11.0), ios(14.0), watchos(7.0), tvos(14.0), bridgeos(5.0)) DYLD_DRIVERKIT_UNAVAILABLE;
-
+extern bool _dyld_shared_cache_contains_path(const char* path)              
 
 /*
  * The following dyld API's are deprecated as of Mac OS X 10.5.  They are either  
@@ -185,7 +184,7 @@ typedef struct __NSModule* NSModule;
 #define NSLINKMODULE_OPTION_DONT_CALL_MOD_INIT_ROUTINES  0x8
 #define NSLINKMODULE_OPTION_TRAILING_PHYS_NAME          0x10
 
-extern bool NSUnLinkModule(NSModule module, uint32_t options) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
+//extern bool NSUnLinkModule(NSModule module, uint32_t options) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "");
 #define NSUNLINKMODULE_OPTION_NONE                  0x0
 #define NSUNLINKMODULE_OPTION_KEEP_MEMORY_MAPPED    0x1
 #define NSUNLINKMODULE_OPTION_RESET_LAZY_REFERENCES	0x2
