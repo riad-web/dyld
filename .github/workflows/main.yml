@@ -10,9 +10,8 @@ on:
 
 jobs:
   build:
-    runs-on: macos-latest
-    env:
-      ARCH: arm64
+    runs-on: macos-13
+
 
     steps:
       - name: Checkout code
