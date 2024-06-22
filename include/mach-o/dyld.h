@@ -118,7 +118,7 @@ extern void _tlv_bootstrap(void)                                             __O
  * cannot stat() the file to see if it "exists".  This function is like a stat() call that checks if a
  * path is to a dylib that was removed from disk and is incorporated into the active dyld cache.
  */
-extern bool _dyld_shared_cache_contains_path(const char* path)              
+extern bool _dyld_shared_cache_contains_path(const char* path)  ;            
 
 /*
  * The following dyld API's are deprecated as of Mac OS X 10.5.  They are either  
