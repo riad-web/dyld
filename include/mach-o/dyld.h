@@ -192,13 +192,13 @@ extern bool NSUnLinkModule(NSModule module, uint32_t options) __API_UNAVAILABLE(
 
 /* symbol API */
 typedef struct __NSSymbol* NSSymbol;
-extern bool     NSIsSymbolNameDefined(const char* symbolName)                                                    __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.4, "dlsym()");
-extern bool     NSIsSymbolNameDefinedWithHint(const char* symbolName, const char* libraryNameHint)               __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.4, "dlsym()");
-extern bool     NSIsSymbolNameDefinedInImage(const struct mach_header* image, const char* symbolName)            __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.4, "dlsym()");
-extern NSSymbol NSLookupAndBindSymbol(const char* symbolName)                                                    __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.4, "dlsym()");
+//extern bool     NSIsSymbolNameDefined(const char* symbolName)                                                    __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.4, "dlsym()");
+//extern bool     NSIsSymbolNameDefinedWithHint(const char* symbolName, const char* libraryNameHint)               __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.4, "dlsym()");
+//extern bool     NSIsSymbolNameDefinedInImage(const struct mach_header* image, const char* symbolName)            __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.4, "dlsym()");
+//extern NSSymbol NSLookupAndBindSymbol(const char* symbolName)                                                    __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.4, "dlsym()");
 //extern NSSymbol NSLookupAndBindSymbolWithHint(const char* symbolName, const char* libraryNameHint)               __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.4, "dlsym()");
-extern NSSymbol NSLookupSymbolInModule(NSModule module, const char* symbolName)                                  __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "dlsym()");
-extern NSSymbol NSLookupSymbolInImage(const struct mach_header* image, const char* symbolName, uint32_t options) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "dlsym()");
+//extern NSSymbol NSLookupSymbolInModule(NSModule module, const char* symbolName)                                  __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "dlsym()");
+//extern NSSymbol NSLookupSymbolInImage(const struct mach_header* image, const char* symbolName, uint32_t options) __API_UNAVAILABLE(ios, tvos, watchos) __API_UNAVAILABLE(bridgeos) DYLD_DRIVERKIT_UNAVAILABLE  __OSX_DEPRECATED(10.1, 10.5, "dlsym()");
 #define NSLOOKUPSYMBOLINIMAGE_OPTION_BIND            0x0
 #define NSLOOKUPSYMBOLINIMAGE_OPTION_BIND_NOW        0x1
 #define NSLOOKUPSYMBOLINIMAGE_OPTION_BIND_FULLY      0x2
