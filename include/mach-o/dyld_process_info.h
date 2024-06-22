@@ -118,7 +118,7 @@ extern void  _dyld_process_info_get_aot_cache(dyld_process_info info, dyld_proce
 extern void _dyld_process_info_for_each_image(dyld_process_info info, void (^callback)(uint64_t machHeaderAddress, const uuid_t uuid, const char* path));
 
 // iterate all aot images in process
-extern void _dyld_process_info_for_each_aot_image(dyld_process_info info, bool (^callback)(uint64_t x86Address, uint64_t aotAddress, uint64_t aotSize, uint8_t* aotImageKey, size_t aotImageKeySize)) __API_UNAVAILABLE(ios, tvos, watchos, bridgeos);
+extern void _dyld_process_info_for_each_aot_image(dyld_process_info info, bool (^callback)(uint64_t x86Address, uint64_t aotAddress, uint64_t aotSize, uint8_t* aotImageKey, size_t aotImageKeySize));
 extern void _dyld_process_info_for_each_segment(dyld_process_info info, uint64_t machHeaderAddress, void (^callback)(uint64_t segmentAddress, uint64_t segmentSize, const char* segmentName));
 
 // returns 0 if the platform cannot be determined, otherwise returns the platform of the remote process
